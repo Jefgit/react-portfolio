@@ -2,7 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
-import vanlife from '../assets/vanlife.png'
+import vanlife from '../assets/vanlife.jpg'
 
 export default function Projects(){
     return(
