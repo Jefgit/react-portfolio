@@ -2,6 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import vanlife from '../assets/vanlife.png'
 
 export default function Projects(){
     return(
@@ -12,7 +13,7 @@ export default function Projects(){
             </div> 
             <div className="portfolio--items">
                 <div className="portfolio--item">
-                    <img className="project--image" src="./src/assets/vanlife.PNG" alt="" />
+                    <img className="project--image" src={vanlife} alt="" />
                     <div className="project--details">
                         <p className="project--name">VAN RENTALS</p>
                         <p className="project--description">

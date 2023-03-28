@@ -1,6 +1,11 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import html_icon from '../assets/html-5.svg'
+import css_icon from '../assets/css-3.svg'
+import javascript_icon from '../assets/javascript.svg'
+import react_icon from '../assets/html-5.svg'
+import mypic from '../assets/pic.jpg'
 
 export default function Home(){
     return(
@@ -14,13 +19,13 @@ export default function Home(){
                 </p>
                 <div className="tech--stacks">
                     <span className="stack--text">Tech Stack</span>
-                    <span className="icon--container"><img className="tech--icon" src="./src/assets/html-5.svg" alt="" /></span>
-                    <span className="icon--container"><img className="tech--icon" src="./src/assets/css-3.svg" alt="" /></span>
-                    <span className="icon--container"><img className="tech--icon" src="./src/assets/javascript.svg" alt="" /> </span>
-                    <span className="icon--container"><img className="tech--icon" src="./src/assets/react.svg" alt="" /> </span>
+                    <span className="icon--container"><img className="tech--icon" src={html_icon} alt="" /></span>
+                    <span className="icon--container"><img className="tech--icon" src={css_icon} alt="" /></span>
+                    <span className="icon--container"><img className="tech--icon" src={javascript_icon} alt="" /> </span>
+                    <span className="icon--container"><img className="tech--icon" src={react_icon} alt="" /> </span>
                 </div>
             </section>
-            <img className="my--image" src="./src/assets/pic.jpg" alt="" />
+            <img className="my--image" src={mypic} alt="" />
             
         </main>
     )
