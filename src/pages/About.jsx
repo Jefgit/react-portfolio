@@ -1,10 +1,10 @@
 import React from "react"
-import demo from '../assets/demo.jpg'
+import demopic from '../assets/demopic.jpg'
 
 export default function About(){
     return(
         <main className="about-page">
-            <img className="aboutme--image" src={demo} alt="" />
+            <img className="aboutme--image" src={demopic} alt="" />
             <section className="aboutme--section">
                 <p className="aboutme--title">ABOUT ME</p>
                 <h3 className="aboutme--intro">
