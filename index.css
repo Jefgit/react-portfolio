@@ -137,6 +137,7 @@ a.link--active{
   width: 23rem;
   height: 23rem;
   border-radius: 1.6rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 .tech--stacks{
@@ -193,6 +194,7 @@ a.link--active{
   height: 23rem;
   object-fit: cover;
   border-radius: 1.6rem;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 .aboutme--title{
