@@ -24,7 +24,7 @@ export default function Contacts(){
                     <div>
                         <p className="email--title">Email</p>
                         <Link 
-                            to='javascript:void(0)'
+                            to='#'
                             onClick={() => window.location = 'mailto:riazondajf@gmail.com'} 
                             className="my--email"
                             >

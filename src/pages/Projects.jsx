@@ -25,8 +25,8 @@ export default function Projects(){
                             <p className="react--stack">React</p>
                         </div>
                         <div className="project--links">
-                            <a href="">Code <FontAwesomeIcon icon={faGithubSquare} className="git-icon-project"/></a>
-                            <a href="">Live Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon-project" /></a>
+                            <a href="https://github.com/Jefgit/van-life">Code <FontAwesomeIcon icon={faGithubSquare} className="git-icon-project"/></a>
+                            <a href="https://van4ever.netlify.app/">Live Demo <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="link-icon-project" /></a>
                         </div>
                     </div>
                 </div>
