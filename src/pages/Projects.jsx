@@ -13,7 +13,9 @@ export default function Projects(){
             </div> 
             <div className="portfolio--items">
                 <div className="portfolio--item">
-                    <img className="project--image" src={vanlife} alt="" />
+                    <a href="https://van4ever.netlify.app/">
+                        <img className="project--image" src={vanlife} alt="VanLife Homepage" />
+                    </a>             
                     <div className="project--details">
                         <p className="project--name">VAN RENTALS</p>
                         <p className="project--description">
