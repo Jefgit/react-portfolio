@@ -134,15 +134,23 @@ body{
   z-index: 300;
 }
 
+.my-links a{
+  padding: .5em;
+}
+
 .my-links a:hover{
   font-weight: 900;
-  text-decoration-line: underline;
+  background-color:#EBEBEB;
+  border-radius: .5em;
+  padding: .5em;
   color: black;
 }
 
 a.link--active{
   font-weight: 900;
-  text-decoration-line: underline;
+  background-color:#EBEBEB;
+  border-radius: .5em;
+  padding: .5em;
   color: black;
 }
 
@@ -260,8 +268,8 @@ a.link--active{
 }
 
 .aboutme--image{
-  max-width: 23rem;
-  max-height: 23rem;
+  max-width: 35rem;
+  max-height: 28rem;
   object-fit: cover;
   border-radius: 1.6rem;
   box-shadow: 0 0 .6rem rgba(0,0,0,.1);
@@ -332,7 +340,7 @@ a.link--active{
 }
 
 .intro--text{
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 .project--name{
@@ -390,8 +398,11 @@ a.link--active{
 .contact--title{
   font-size: 1.2em;
   font-weight: 900;
-  margin-bottom: 3rem;
   color: #147EFB;
+}
+
+.get--intouch{
+  margin-bottom: 3rem;
 }
 
 .contact--location,.contact--email{
@@ -519,9 +530,15 @@ a.link--active{
     flex-direction: column;
   }
 
+  .aboutme--image{
+    max-width: 100%;
+    max-height: auto;
+  }
+
   .aboutme--section{
     text-align: center;
   }
+  
 /***Projects***/
   .portfolio--item{
     min-width: 20rem;

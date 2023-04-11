@@ -6,7 +6,8 @@ import { faLocationDot, faSquareEnvelope } from '@fortawesome/free-solid-svg-ico
 export default function Contacts(){
     return(
         <main className="contact-page">
-            <p className="contact--title">CONTACT</p>
+            <h1 className="contact--title">CONTACT</h1>
+            <h2 className="get--intouch">Let's get in touch<span>💬</span></h2>
             <section className="contact--content">
                 <div className="contact--location">
                     <i className="location-icon-container">

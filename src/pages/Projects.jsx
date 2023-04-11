@@ -8,8 +8,8 @@ export default function Projects(){
     return(
         <main className="projects-page">
             <div className="projects--text">
-                <h3 className="portfolio--text">PORTFOLIO</h3>
-                <h4 className="intro--text">Some Text Here</h4>
+                <h1 className="portfolio--text">PORTFOLIO</h1>
+                <h2 className="intro--text">Check my crafts<span>👨‍💻</span></h2>
             </div> 
             <div className="portfolio--items">
                 <div className="portfolio--item">
