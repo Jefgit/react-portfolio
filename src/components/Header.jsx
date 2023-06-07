@@ -1,79 +1,83 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 
 export default function Header(){
     
-    const [toggleClass, setToggleClass] = React.useState("mobile-links");
-    // const [toggleButton, setToggleButton] = React.useState("open-menu-button");
+    const [toggleClass, setToggleClass] = useState("mobile-links");
+    const [activeLink, setActiveLink] = useState("home");
+    
+    // useEffect(() => {
+    //     console.log(activeLink)
+    // },[])
+    
+
     function onClickHandler(){
         setToggleClass(prevClass => {
             return prevClass === "mobile-links" ? "toggle--navlink" : "mobile-links"
         })
-        // setToggleButton(prevButton => {
-        //     return prevButton === "" ? "open-menu-button" : ""
-        // })
-
     }
     return(
         <header className="my-header">
-            <Link to="/" className="my-logo">Jep.dev</Link>
+            <a href="#home" className="my-logo">Jep.dev</a>
             <nav className="my-links" >
-                <NavLink 
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="." 
+                    href="#home" 
+                    // onClick={setActiveLink("home")}
                     >
                     Home
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="about" 
+                    href="#about" 
+                    // onClick={setActiveLink("about")}
                     >
                     About
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="projects"
+                    href="#projects"
                     >
                     Projects
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="contacts"
+                    href="#contacts"
                     >
                     Contacts
-                </NavLink>
+                </a>
             </nav>
             <nav className={`my-nav-links ${toggleClass}`} >
-                <NavLink 
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="." 
+                    href="#home" 
                     onClick={onClickHandler}
                     >
                     Home
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="about" 
+                    href="#about" 
                     onClick={onClickHandler}
                     >
                     About
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="projects"
+                    href="#projects"
                     onClick={onClickHandler}
                     >
                     Projects
-                </NavLink>
-                <NavLink 
+                </a>
+                <a 
                     className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="contacts"
+                    href="#contacts"
                     onClick={onClickHandler}
                     >
                     Contacts
-                </NavLink>
+                </a>
                 <button onClick={onClickHandler} className="close-button" ><FontAwesomeIcon icon={faXmark} /></button>
             </nav>
             <button onClick={onClickHandler} className="open-menu-button" ><FontAwesomeIcon icon={faBars} /></button>

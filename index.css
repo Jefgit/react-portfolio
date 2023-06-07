@@ -4,10 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root{
-  --bgcolor :#F9F9F9;
+  --bgcolor1 :#F9F9F9;
+  --bgcolor2 :#FFFFFF;
 }
 
 html{
@@ -156,15 +158,19 @@ a.link--active{
 
 /*** Home Page***/
 .home-page{
-  display: flex;
   min-height: 100vh;
-  align-content: space-between;
-  column-gap: 4rem;
-  align-items: center;
   position: relative;
-  padding: 8rem 4rem;
+  padding: 10em 0 8em 0;
+  background-color: var(--bgcolor1);
+}
+
+.home-container, .about-container{
+  display: flex;
+  align-content: space-between;
+  gap: 6rem;
+  align-items: center;
   justify-content: center;
-  background-color: var(--bgcolor);
+  padding: 0 clamp(2em, 3vw, 4em);
 }
 
 .my--info{
@@ -181,7 +187,7 @@ a.link--active{
 }
 
 .my--description{
-  max-width: 35rem;
+  /* max-width: 35rem; */
   color: #767676;
 }
 .social--links a{
@@ -207,8 +213,8 @@ a.link--active{
 }
 
 .my--image{
-  width: clamp(20rem, 5vw, 23rem);
-  height: clamp(20rem, 5vw, 23rem);
+  width: clamp(20rem, 5vw, 35rem);
+  height: clamp(20rem, 5vw, 35rem);
   border-radius: 1.6rem;
   box-shadow: 0 0 0.6rem rgba(0,0,0,.1);
 }
@@ -250,16 +256,12 @@ a.link--active{
 }
 /*** About Page***/
 .about-page{
-  display: flex;
-  align-content: space-between;
   position: relative;
-  gap: 4rem;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  padding: 8rem 4rem;
-  background-color: var(--bgcolor);
+  padding: 8em 0;
+  background-color: var(--bgcolor2);
 }
+
 .aboutme--section{
   display:flex;
   flex-direction: column;
@@ -296,13 +298,16 @@ a.link--active{
   display: flex;
   flex-direction: column;
   position: relative;  
-  gap: 1rem;
-  min-height: 90vh;
-  align-items: center;
   justify-content: center;
-  padding: 8rem 4rem;
+  padding: 8em 0;
   
-  background-color: var(--bgcolor);
+  background-color: var(--bgcolor1);
+}
+
+.projects-container{
+  margin: 0 auto;
+  max-width: clamp(10rem, 100vw, 100rem);
+  padding: 0 clamp(1rem, 10vw, 10rem);
 }
 
 .portfolio--text{
@@ -323,14 +328,14 @@ a.link--active{
   background-color: #fff;
   border-radius: 1rem;
   padding: 1.2rem;
-  margin-top: 2em;
+  margin-top: 3em;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   align-items: center;
 }
 
 .project--image{
   border-radius: 1rem;
-  width: clamp(100%,10vw,100%);
+  width: clamp(20em,50vw,45em);
   height: auto;
   box-shadow: 0 0 .6rem rgba(0,0,0,.1);
 }
@@ -352,6 +357,7 @@ a.link--active{
   font-size: 1.1em;
   font-weight: 500;
   color: #999999;
+  padding: 0 1em;
 }
 
 .project--details{
@@ -360,22 +366,31 @@ a.link--active{
   align-content: center;
   align-items: center;
   row-gap: 1em;
-  /* padding: 2rem 0; */
   text-align: center;
+  margin: 0 auto;
 }
 
 .project--links{
+  display: flex;
+  flex: wrap;
   margin-top: 1em;
 }
 .project--links a{
-  font-size: 1.2em;
+  font-size: 1;
   font-weight: 700;
   text-decoration: none;
   margin: 1em;
   color: #333333;
 }
 
+.project--stackuse{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
 .react--stack{
+  font-size: clamp(0.95em, 3vw, 1em);
   font-weight: 500;
   box-shadow: 0 0 .6rem rgba(0,0,0,.1);
   padding: 0.4em;
@@ -383,16 +398,18 @@ a.link--active{
 } 
 
 /*** Contacts ***/
-.contact-page{
+.contacts-page{
   display: flex;
   flex-direction: column;
-  position: relative;  
-  gap: 1rem;
-  min-height: 100vh;
-  justify-content: center;
-  padding: 8rem 4rem;
+  padding: 8em 0;
   
-  background-color: var(--bgcolor);
+  background-color: var(--bgcolor2);
+}
+
+.contacts-container{
+  margin: 0 auto;
+  width: clamp(20rem, 100vw, 75rem);
+  padding: 0 4rem;
 }
 
 .contact--title{
@@ -497,7 +514,7 @@ a.link--active{
   }
   
   /***Home Page***/
-  .home-page{
+  .home-container{
     flex-direction: column;
     gap: 2rem;
   }
@@ -514,8 +531,14 @@ a.link--active{
     text-align: center;
     align-items: center;
   }
+
   .tech--stacks{
     flex-direction: column;
+  }
+
+  .tech-icons-container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .stack--text{
@@ -526,7 +549,7 @@ a.link--active{
   }
 
   /***About***/
-  .about-page{
+  .about-container{
     flex-direction: column;
   }
 
@@ -541,12 +564,11 @@ a.link--active{
   
 /***Projects***/
   .portfolio--item{
-    min-width: 20rem;
     flex-direction: column;
   }
 
   /***Contact***/
-  .contact-page{
+  .contact--content{
     text-align: center;
   }
 
