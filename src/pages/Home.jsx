@@ -10,7 +10,7 @@ export default function Home(){
         {id:3, icon: "https://cdn.svgporn.com/logos/javascript.svg", name:"Javascript"},
         {id:4, icon: "https://cdn.svgporn.com/logos/react.svg", name:"React"},
         {id:5, icon: "https://cdn.svgporn.com/logos/react-router.svg", name:"React Router"},
-        {id:6, icon: "https://cdn.svgporn.com/logos/firebase.svg", name:"Firebase"}
+        {id:6, icon: "https://cdn.svgporn.com/logos/tailwindcss-icon.svg", name:"Tailwind CSS"},
     ]
 
     const displayTechStack = techStacks.map( tech =>  (

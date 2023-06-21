@@ -9,8 +9,8 @@ export default function About(){
                 <section className="aboutme--section">
                     <p className="aboutme--title">ABOUT ME</p>
                     <h3 className="aboutme--intro">
-                        A tech savvy, creative and innovative Front-End Developer 
-                        with continuous learning and application of my web development skills. 
+                        A creative and innovative Front-End Developer 
+                        creating user-friendly and efficient websites that are visually appealing and easy to navigate. 
                     </h3>
                     <p className="aboutme--context">
                         As a front-end developer I have aquired knowledge and expertise 
