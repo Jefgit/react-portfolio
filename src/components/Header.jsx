@@ -1,84 +1,53 @@
-import React from "react"
-import { Link, NavLink } from "react-router-dom"
+import React, { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 
 export default function Header(){
     
-    const [toggleClass, setToggleClass] = React.useState("mobile-links");
-    // const [toggleButton, setToggleButton] = React.useState("open-menu-button");
+    const [toggleClass, setToggleClass] = useState("mobile-links");
+
     function onClickHandler(){
         setToggleClass(prevClass => {
             return prevClass === "mobile-links" ? "toggle--navlink" : "mobile-links"
         })
-        // setToggleButton(prevButton => {
-        //     return prevButton === "" ? "open-menu-button" : ""
-        // })
-
     }
     return(
         <header className="my-header">
-            <Link to="/" className="my-logo">Jep.dev</Link>
+            <a href="#home" className="my-logo">Jep.dev</a>
             <nav className="my-links" >
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="." 
-                    >
-                    Home
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="about" 
-                    >
-                    About
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="projects"
-                    >
-                    Projects
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="contacts"
-                    >
-                    Contacts
-                </NavLink>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contacts">Contacts</a>
             </nav>
             <nav className={`my-nav-links ${toggleClass}`} >
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="." 
+                <a 
+                    href="#home" 
                     onClick={onClickHandler}
                     >
                     Home
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="about" 
+                </a>
+                <a 
+                    href="#about" 
                     onClick={onClickHandler}
-                    >
+                >
                     About
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="projects"
+                </a>
+                <a 
+                    href="#projects"
                     onClick={onClickHandler}
-                    >
+                >
                     Projects
-                </NavLink>
-                <NavLink 
-                    className={({isActive}) => isActive ? "link--active" : ""} 
-                    to="contacts"
+                </a>
+                <a 
+                    href="#contacts"
                     onClick={onClickHandler}
-                    >
+                >
                     Contacts
-                </NavLink>
+                </a>
                 <button onClick={onClickHandler} className="close-button" ><FontAwesomeIcon icon={faXmark} /></button>
             </nav>
             <button onClick={onClickHandler} className="open-menu-button" ><FontAwesomeIcon icon={faBars} /></button>
         </header>
-        
-        
     )
 }
