@@ -13,7 +13,11 @@ export default function About(){
                         creating user-friendly and efficient websites that are visually appealing and easy to navigate. 
                     </h3>
                     <p className="aboutme--context">
+<<<<<<< HEAD
                         As a front-end developer I have acquired knowledge and expertise 
+=======
+                        As a front-end developer I have aquired knowledge and expertise 
+>>>>>>> 2b50e2253d3b9634b282acd1bb61f768184b8867
                         in making a web design into a working web interface with the result of 
                         making the user experience as comfortable as possible and putting in mind the 
                         readability and reausability of a clean code.

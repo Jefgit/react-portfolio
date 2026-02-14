@@ -31,6 +31,15 @@ export default function Projects(){
             web_url:"https://my-ecommerce-alpha.vercel.app",
             stack:["React","Next.js","Tailwind","MongoDB"],
             img_url:"https://i.ibb.co/2hd0PTj/my-ecommerce.png"
+        },
+        {   
+            id:126,
+            name:"Bibotante App",
+            description:"An app that can create pre made list of candidates to vote for local election.",
+            github_url:"https://github.com/Jefgit/Bibotante_App",
+            web_url:"https://bibotante.netlify.app/",
+            stack:["React","Typescript","Node.js","Express.js"],
+            img_url:"https://i.ibb.co/8TFH3Bq/bibotante-app.png"
         }
 
     ]

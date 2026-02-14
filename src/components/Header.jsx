@@ -5,6 +5,10 @@ import { faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 export default function Header(){
     
     const [toggleClass, setToggleClass] = useState("mobile-links");
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 2b50e2253d3b9634b282acd1bb61f768184b8867
 
     function onClickHandler(){
         setToggleClass(prevClass => {
@@ -15,16 +19,25 @@ export default function Header(){
         <header className="my-header">
             <a href="#home" className="my-logo">Jep.dev</a>
             <nav className="my-links" >
+<<<<<<< HEAD
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+=======
+                <a href="#home" >Home</a>
+                <a href="#about" >About</a>
+>>>>>>> 2b50e2253d3b9634b282acd1bb61f768184b8867
                 <a href="#projects">Projects</a>
                 <a href="#contacts">Contacts</a>
             </nav>
             <nav className={`my-nav-links ${toggleClass}`} >
+<<<<<<< HEAD
                 <a 
+=======
+                <a  
+>>>>>>> 2b50e2253d3b9634b282acd1bb61f768184b8867
                     href="#home" 
                     onClick={onClickHandler}
-                    >
+                >
                     Home
                 </a>
                 <a 
